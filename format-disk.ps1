@@ -20,11 +20,3 @@ if (Test-Path "F:\") {
 } else {
     Write-Host "Drive F: was not created. Check disk initialization."
 }
-
-
-# Create required SQL folders
-New-Item -Path "F:\data" -ItemType Directory -Force
-New-Item -Path "F:\log" -ItemType Directory -Force
-New-Item -Path "F:\tempDb" -ItemType Directory -Force
-
-Write-Host "Disk setup completed."
